@@ -9,3 +9,4 @@ It features:
 - All data loaded from static json and converted to html layout using React components.
 - Separators on the menu using css ::after selector.
 - Separators added to react children by Menu component transparently.
+- Responsive styling from hacker news also implemented (at 750 px), removing margins and using all screen.

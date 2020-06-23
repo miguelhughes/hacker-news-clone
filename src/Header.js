@@ -6,16 +6,18 @@ const Header = () => {
   return (
     <div className="header">
       <Logo />
-      <span className="heading">Hacker News</span>
-      <Menu>
-        <a href="#">new</a>
-        <a href="#">past</a>
-        <a href="#">comments</a>
-        <a href="#">ask</a>
-        <a href="#">show</a>
-        <a href="#">jobs</a>
-        <a href="#">submit</a>
-      </Menu>
+      <span className="nav">
+        <span className="heading">Hacker News</span>
+        <Menu>
+          <a href="#">new</a>
+          <a href="#">past</a>
+          <a href="#">comments</a>
+          <a href="#">ask</a>
+          <a href="#">show</a>
+          <a href="#">jobs</a>
+          <a href="#">submit</a>
+        </Menu>
+      </span>
       <Login />
     </div>
   );

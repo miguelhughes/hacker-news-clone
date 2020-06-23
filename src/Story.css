@@ -1,14 +1,19 @@
+body {
+  margin: 8px;
+}
 .story-container {
   font-family: Verdana, Geneva, sans-serif;
   text-align: center;
+  width: 85%;
+  margin: 0 auto;
 }
+
 .header,
 .story {
   text-align: left;
-  display: inline-block;
+  display: block;
 }
 .header {
-  width: 1400px;
   background-color: rgb(255, 102, 0);
   height: 24px;
   line-height: 24px;
@@ -16,11 +21,12 @@
 }
 .header .menu {
   vertical-align: top;
+  margin-left: 4px;
 }
 .header .menu a,
 .separator,
 .heading {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 .separator::after {
@@ -30,7 +36,9 @@
 .heading {
   font-weight: bold;
   vertical-align: top;
+  margin-left: 4px;
 }
+
 .logo {
   color: white;
   border: 1px solid white;
@@ -43,12 +51,18 @@
   float: right;
   padding-right: 5px;
 }
+.story:nth-child(2) {
+  /*kind of hacky, to insert space between header and first story. it would be better if there was an actual wrapper around the stories*/
+  padding-top: 10px;
+}
 .story {
-  width: 1380px;
   background-color: #f6f6ef;
   color: #828282;
   font-size: 10pt;
-  padding: 10px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 a {
   color: inherit;
@@ -62,6 +76,8 @@ a:hover {
 }
 .rank {
   vertical-align: top;
+  min-width: 2.5em;
+  text-align: right;
 }
 .story-header,
 .details {
@@ -86,4 +102,14 @@ a:hover {
 
 .vote-button {
   font-size: 13pt;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    margin: 0;
+  }
+  .story-container {
+    width: 100%;
+    margin: 0;
+  }
 }
