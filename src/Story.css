@@ -1,0 +1,89 @@
+.story-container {
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+.header,
+.story {
+  text-align: left;
+  display: inline-block;
+}
+.header {
+  width: 1400px;
+  background-color: rgb(255, 102, 0);
+  height: 24px;
+  line-height: 24px;
+  font-size: 13.33px;
+}
+.header .menu {
+  vertical-align: top;
+}
+.header .menu a,
+.separator,
+.heading {
+  margin-left: 6px;
+}
+
+.separator::after {
+  content: "|";
+}
+
+.heading {
+  font-weight: bold;
+  vertical-align: top;
+}
+.logo {
+  color: white;
+  border: 1px solid white;
+  margin: 2px 0 0 2px;
+  height: 18px;
+  width: 18px;
+}
+
+.login {
+  float: right;
+  padding-right: 5px;
+}
+.story {
+  width: 1380px;
+  background-color: #f6f6ef;
+  color: #828282;
+  font-size: 10pt;
+  padding: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.story > div {
+  display: inline-block;
+}
+.rank {
+  vertical-align: top;
+}
+.story-header,
+.details {
+  margin-left: 5px;
+}
+.title {
+  color: black;
+}
+
+.details,
+.domain {
+  font-size: 8pt;
+}
+
+.domain {
+  margin-left: 0.5em;
+}
+
+.details > span {
+  margin-right: 0.5em;
+}
+
+.vote-button {
+  font-size: 13pt;
+}
