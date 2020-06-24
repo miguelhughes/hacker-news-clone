@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#bit build files
+/dist
+
 # testing
 /coverage
 

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Story from "./Story";
 import Header from "./Header";
-import ReadmeViewer from "./ReadmeViewer";
+import ReadmeViewer from "./components/ReadmeViewer/ReadmeViewer";
 
 const Stories = ({ stories }) => {
   return (

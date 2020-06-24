@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import RawFileLoader from "./RawFileLoader";
+import RawFileLoader from "../RawFileLoader/RawFileLoader";
 import "./ReadmeViewer.css";
 
 const ReadmeViewer = ({ repoName }) => {
