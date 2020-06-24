@@ -145,7 +145,7 @@ export const storyData = [
     points: 40,
     author: "ViralBShah",
     date: "8 hours ago",
-    comment: 1,
+    comments: 1,
   },
   {
     position: 17,

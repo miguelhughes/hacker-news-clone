@@ -2,15 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import Story from "./Story";
 import Header from "./Header";
+import ReadmeViewer from "./ReadmeViewer";
 
 const Stories = ({ stories }) => {
   return (
-    <div className="story-container">
-      <Header />
-      {stories.map((story) => (
-        <Story key={story.id} story={story} />
-      ))}
-    </div>
+    <>
+      <ReadmeViewer repoName={"hacker-news-clone"} />
+      <div className="story-container">
+        <Header />
+        {stories.map((story) => (
+          <Story key={story.position} story={story} />
+        ))}
+      </div>
+    </>
   );
 };
 

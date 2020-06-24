@@ -7,6 +7,5 @@ It features:
 - Identical layout of hacker news.
 - No tables used at all, unlike the original site which uses tables throughout.
 - All data loaded from static json and converted to html layout using React components.
-- Separators on the menu using css ::after selector.
-- Separators added to react children by Menu component transparently.
+- Separators on the menu are added using css ::after selector.
 - Responsive styling from hacker news also implemented (at 750 px), removing margins and using all screen.

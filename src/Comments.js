@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Comments = ({ count }) => {
   const content = count > 0 ? count + " comments" : "discuss";
   return (
-    <a className="count" href="#">
+    <a className="count" href="/">
       {content}
     </a>
   );

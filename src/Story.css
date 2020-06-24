@@ -28,8 +28,8 @@ body {
 .heading {
   margin-left: 5px;
 }
-
-.separator::after {
+.header .menu a:not(:nth-last-child(1))::after {
+  margin-left: 5px;
   content: "|";
 }
 
