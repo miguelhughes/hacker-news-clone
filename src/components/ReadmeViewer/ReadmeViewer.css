@@ -4,16 +4,23 @@
   left: 5px;
   width: 6.6em;
   height: 1.4em;
-  transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s, background-color 0.5s;
   overflow: hidden;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid transparent;
 }
 .readme-viewer.expanded {
   border-color: #ccc;
+  background-color: white;
   border-radius: 5px;
-  width: 60%;
-  height: 20em;
+  width: 1000px;
+  height: 300px;
+}
+.readme-viewer .wrapper {
+  /*this should take the screen's size but we can't use % as its inside the viewer*/
+  width: 1000px;
+  height: 300px;
+  overflow: hidden;
 }
 
 .linkButton {

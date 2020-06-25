@@ -20,13 +20,15 @@ const ReadmeViewer = ({ repoName }) => {
   else
     return (
       <div className={theClass}>
-        <button onClick={toggleExpand} title="show this sample's readme">
-          about this
-        </button>
-        <button className="linkButton" onClick={dismiss}>
-          X
-        </button>
-        {expanded && <RawFileLoader url={url} />}
+        <div className="wrapper">
+          <button onClick={toggleExpand} title="show this sample's readme">
+            about this
+          </button>
+          <button className="linkButton" onClick={dismiss}>
+            X
+          </button>
+          {expanded && <RawFileLoader url={url} />}
+        </div>
       </div>
     );
 };

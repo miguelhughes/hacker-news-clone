@@ -14,7 +14,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "miguelhughes.showcase/readme-viewer@0.0.1": {
+    "miguelhughes.showcase/readme-viewer@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/ReadmeViewer/ReadmeViewer.css",
